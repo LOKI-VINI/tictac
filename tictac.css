@@ -90,18 +90,21 @@ body{
 }
 
 /* Responsive adjustments */
-@media (max-width: 600px) {
+
+  
+/* Responsive adjustments */
+@media (max-width: 700px) {
     .model, .model1 {
-        max-width: 90%; /* use more of the width on small devices */
-        padding: 15px; /* reduce padding */
-        font-size: 14px; /* smaller font size */
+         max-width: 90%; /* use more of the width on small devices */
+        padding: 10px; /* reduce padding */
+        font-size: 12px; /* smaller font size */
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 460px) {
     .model, .model1 {
-        padding: 10px; /* further reduce padding */
-        font-size: 12px; /* even smaller font size */
+        padding: 8px; /* further reduce padding */
+        font-size: 9px; /* even smaller font size */
     }
 }
 
