@@ -71,22 +71,40 @@ body{
   color: #fff;
   transform: translateY(-3px);
 }
-.model, .model1 {
-    display: none; /* initially hidden */
-    position: fixed; /* make it fixed so it appears over everything */
-    left: 50%;
-    top: 50%;
-    max-width: 400px;
-    height: auto;
-    font-size: medium;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    z-index: 1000; /* ensure it's above other elements */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* added shadow for better visibility */
-    padding: 20px;
-    border-radius: 13px;
-    text-align: center;
+.model, .model1 {     
+    display: none; /* initially hidden */     
+    position: fixed; /* make it fixed so it appears over everything */     
+    left: 50%;     
+    top: 50%;     
+    max-width: 90%; /* allow modal to take up to 90% of the viewport width on small screens */     
+    width: 450px; /* fixed width for larger screens */     
+    height: auto;     
+    font-size: medium;     
+    transform: translate(-50%, -50%);     
+    background-color: white;     
+    z-index: 1000; /* ensure it's above other elements */     
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* added shadow for better visibility */     
+    padding: 20px;     
+    border-radius: 13px;     
+    text-align: center; 
 }
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .model, .model1 {
+        max-width: 90%; /* use more of the width on small devices */
+        padding: 15px; /* reduce padding */
+        font-size: 14px; /* smaller font size */
+    }
+}
+
+@media (max-width: 400px) {
+    .model, .model1 {
+        padding: 10px; /* further reduce padding */
+        font-size: 12px; /* even smaller font size */
+    }
+}
+
 .model1{
     width: 200px;
     height: 150px;
