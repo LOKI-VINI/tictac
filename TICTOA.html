@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TAC-TOE</title>
+    <link rel="stylesheet" href="tictac.css">
+</head>
+<body>
+    <H1>TIC-TAC-TOE</H1>
+    <main>
+        <div class="instructions model">
+            <h2>Tic-Tac-Toe Game Instructions</h2>
+            <p>Welcome to Tic-Tac-Toe! You will be playing against Loki, your AI opponent. Here’s how to play:</p>
+            
+            <ol>
+                <li>The game is played on a 3x3 grid.</li>
+                <li>You will use "O", and Loki will use "X".</li>
+                <li>Take turns placing your marks (O) on an empty square by clicking on it. Loki will make its move automatically.</li>
+                <li>The first player to get 3 of their marks in a row (horizontally, vertically, or diagonally) wins the game.</li>
+                <li>If all 9 squares are filled and no player has 3 marks in a row, the game ends in a draw.</li>
+                <li>To start a new game, click the "Reset" button to clear the grid.</li>
+            </ol>
+            
+            <h3>Good luck and have fun!</h3>
+            
+            <div class="loki-introduction">
+                <h4>Hello, I am Loki, your Logical Operations & Knowledge Interface!, to start the game tell me your name</h4>
+                <input type="text" id="player-name" placeholder="Enter your name" />
+                <button class="btn startGame" role="button" id="submit-name">Start Game</button>
+            </div>
+        </div>
+        
+        <div class="model1">
+           <h2 id="winner"></h2> 
+            <button class="btn newGame" role="button">Play Again</button>
+        </div>
+        <div class="container">
+        <div class="game">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+    </div>
+    <div class="winning-line" id="winningLine"></div>
+
+    <button class="reset-btn btn" role="button">Reset Game</button>
+    </main>
+</body>
+<script type="module" src="tictac.js"></script>
+<!-- <script type="module" src="confetti.js"></script> -->
+</html>
+
